@@ -34,14 +34,14 @@ dog.name  // return "Spot"
 - ##### 数组使用
 
 ```javascript
-# 创建数组，数组值的类型可以包含任意变量类型
+// 创建数组，数组值的类型可以包含任意变量类型
 let sequence = [1, 1, 2, 3, 5, 8, 13];
 let random = ['tree', 795, [0, 1, 2]];
 
-# 获取数组长度,通过数组的 .length属性
+// 获取数组长度,通过数组的 .length属性
 sequence.length;
 
-# 遍历数组
+// 遍历数组
 for (let i = 0; i < sequence.length; i++)
 {
     console.log(sequence[i]);
@@ -51,13 +51,13 @@ for (let i = 0; i < sequence.length; i++)
 ​	字符串与数组之间的转换  **split() 和 join()**
 
 ```javascript
-# 字符串转换为数组
+// 字符串转换为数组
 let myData = "Manchester,London,Liverpool,Birmingham,Leeds,Carlisle";
-let myArray = myData.split(','); # 用 "," 来分割字符串成为数组
+let myArray = myData.split(','); // 用 "," 来分割字符串成为数组
 myArray
 
-# 数组转换为字符串
-let myNewString = myArray.join(','); # 用 "," 分隔符来拼接数组成为字符串
+// 数组转换为字符串
+let myNewString = myArray.join(','); // 用 "," 分隔符来拼接数组成为字符串
 
 let dogNames = ["Rocket","Flash","Bella","Slugger"];
 dogNames.toString(); //return : "Rocket,Flash,Bella,Slugger"
@@ -67,18 +67,18 @@ dogNames.toString(); //return : "Rocket,Flash,Bella,Slugger"
 ​	添加和删除数组 **push()** 和 **pop()** 、**unshift()** 和 **shift()** 
 
 ```javascript
-# push() 在数组尾端添加元素
+// push() 在数组尾端添加元素
 let nums = [1, 2, 34, 41, 21]
 nums.push(98)
-nums;	# return : (6) [1, 2, 34, 41, 21, 98]
+nums;	// return : (6) [1, 2, 34, 41, 21, 98]
 
-# pop() 删除数组尾端元素
+// pop() 删除数组尾端元素
 nums.pop();
 nums;
 
-# unshift() 和 shift() 作用于数组开始
+// unshift() 和 shift() 作用于数组开始
 let words = ['good', 'bad', 'well'];
-words.unshift("Just so so"); # return : (4) ["Just so so", "good", "bad", "well"]
+words.unshift("Just so so"); // return : (4) ["Just so so", "good", "bad", "well"]
 
 words.shift();
 words;
@@ -106,7 +106,7 @@ words;
 使用**js2py**模块，官方github文档：[js2py](https://github.com/PiotrDabkowski/Js2Py)
 
 ```python
-# 简单使用说明
+// 简单使用说明
 import js2py
 
 In [66]: js2py.eval_js("console.log('Hello World')")
@@ -115,7 +115,7 @@ In [66]: js2py.eval_js("console.log('Hello World')")
 In [67]: js2py.eval_js("let name ='Oliver'")
 Out[67]: 'Oliver'
 
-# 多行代码使用
+// 多行代码使用
 >>> js = js2py.EvalJs()
 >>> js.execute('var a = 10; function f(x) {return x*x};')
 >>> js.f(9)
